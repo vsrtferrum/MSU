@@ -288,9 +288,9 @@ func main() {
 		fmt.Printf("Максимальное значение среди всех эксперимента №%d\n", i+1)
 		fmt.Printf("Максимальное значение\ttau\t\n")
 		tmn, tmx := merger[mnindex], merger[mxindex]
-		fmt.Printf("%f\t\t%f\n", tmx[i], math.Abs(tmx[i]-mx)/mxSKO)
+		fmt.Printf("%f\t\t%f\n", math.Abs(tmx[i]-mx)/mxSKO, 2.7)
 		fmt.Printf("Минимальное значение\ttau\t\n")
-		fmt.Printf("%f\t\t%f\n", tmn[i], math.Abs(tmn[i]-mn)/mnSKO)
+		fmt.Printf("%f\t\t%f\n", math.Abs(tmn[i]-mn)/mnSKO, 2.7)
 	}
 	fmt.Println(separator)
 	fmt.Println("Проверка гипотезы об однородности дисперссии опытов:")
